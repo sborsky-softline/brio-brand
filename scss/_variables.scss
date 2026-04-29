@@ -1,0 +1,56 @@
+// Brio Water — SCSS Variables
+// Mirrors tokens/tokens.css for SCSS-based projects.
+// Import this before any component files.
+// NOTE: Declare @font-face for Centura No 2 before importing this file.
+
+// ─── Colors ──────────────────────────────────
+$color-blue:       #00A3E0; // primary — logo, CTAs, headings
+$color-blue-light: #90C6EA; // secondary — hover, tints, accents
+$color-navy:       #004D7A; // dark accent — sections, overlays
+$color-charcoal:   #24282B; // near-black text + footer
+$color-gray:       #9EA1A2; // secondary text
+$color-gray-light: #E4E1E5; // borders, backgrounds
+$color-white:      #FFFFFF;
+$color-tint:       #F0F8FD; // ultra-light blue for alt sections
+
+// ─── Typography ───────────────────────────────
+$font-primary: 'Centura No 2', Nunito, Poppins, system-ui, sans-serif;
+
+// ─── Spacing ─────────────────────────────────
+$space-xs:  0.4rem;
+$space-s:   0.8rem;
+$space-m:   1.6rem;
+$space-l:   2.4rem;
+$space-xl:  4.8rem;
+$space-2xl: 8rem;
+$space-3xl: 12rem;
+
+// ─── Radius ──────────────────────────────────
+$radius-s:    0.4rem;
+$radius-m:    0.8rem;
+$radius-l:    1.6rem;
+$radius-xl:   3.2rem;
+$radius-pill: 10rem;
+
+// ─── Layout ──────────────────────────────────
+$max-width:          1320px;
+$content-padding:    clamp(1.6rem, 4vw, 6rem);
+$section-gap:        clamp(6rem, 8vw, 12rem);
+$card-gap:           2rem;
+$product-grid-gap:   2.4rem;
+
+// ─── Breakpoints ─────────────────────────────
+$bp-mobile:  640px;
+$bp-tablet:  1024px;
+$bp-desktop: 1320px;
+
+// ─── Motion ──────────────────────────────────
+$ease-out:  cubic-bezier(0.16, 1, 0.3, 1);
+$dur-fast:  150ms;
+$dur-base:  220ms;
+$dur-slow:  380ms;
+
+// ─── Shadows ─────────────────────────────────
+$shadow-card:  0 2px 12px rgba(0, 163, 224, 0.10);
+$shadow-hover: 0 8px 32px rgba(0, 163, 224, 0.18);
+$shadow-deep:  0 16px 48px rgba(0, 77, 122, 0.20);

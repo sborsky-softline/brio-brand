@@ -1,0 +1,12 @@
+{
+  "color": {
+    "blue":       { "value": "#00A3E0", "pantone": "BW 299C",  "comment": "Primary — logo, CTAs, headings, links" },
+    "blueLight":  { "value": "#90C6EA", "pantone": "BW 2905C", "comment": "Secondary — backgrounds, hover states, accents" },
+    "navy":       { "value": "#004D7A", "pantone": "BW 7693C", "comment": "Dark accent — deep sections, dark mode surfaces" },
+    "charcoal":   { "value": "#24282B", "pantone": "BW 426C",  "comment": "Near-black — body text, footer bg" },
+    "gray":       { "value": "#9EA1A2", "pantone": "BW 422C",  "comment": "Secondary text, metadata, captions" },
+    "grayLight":  { "value": "#E4E1E5", "pantone": "BW 663C",  "comment": "Backgrounds, dividers, card borders" },
+    "white":      { "value": "#FFFFFF",                         "comment": "Default surface" }
+  },
+  "note": "Never use more than 2 highlight hues in a single composition (per brand guide). Primary blue + one accent only."
+}

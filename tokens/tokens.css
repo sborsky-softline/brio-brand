@@ -1,0 +1,81 @@
+/* Brio Water — Design Tokens
+   Source of truth for all brand colors, type, spacing, and motion.
+   Import this into any project. Do not override without explicit need.
+
+   FONT NOTE: Centura No 2 is a licensed typeface. Self-host the woff2 files
+   in /fonts/ and declare @font-face before importing this file.
+   Fallback stack: Nunito, Poppins, system-ui, sans-serif */
+
+:root {
+  /* ─── Colors ─────────────────────────────── */
+  --color-blue:         #00A3E0; /* primary — logo, CTAs, headings */
+  --color-blue-light:   #90C6EA; /* secondary — hover states, bg tints */
+  --color-navy:         #004D7A; /* dark accent — deep sections */
+  --color-charcoal:     #24282B; /* near-black text + footer bg */
+  --color-gray:         #9EA1A2; /* secondary text, metadata */
+  --color-gray-light:   #E4E1E5; /* backgrounds, dividers, borders */
+  --color-white:        #FFFFFF;
+
+  /* ─── Semantic roles ───────────────────────*/
+  --surface-default:          var(--color-white);
+  --surface-tint:             #F0F8FD; /* ultra-light blue tint for alt sections */
+  --surface-dark:             var(--color-navy);
+  --surface-footer:           var(--color-charcoal);
+  --text-primary:             var(--color-charcoal);
+  --text-secondary:           var(--color-gray);
+  --text-on-dark:             var(--color-white);
+  --text-brand:               var(--color-blue);
+  --border-default:           var(--color-gray-light);
+  --interactive-primary-bg:   var(--color-blue);
+  --interactive-primary-text: var(--color-white);
+  --interactive-secondary-bg: var(--color-white);
+  --interactive-secondary-text: var(--color-blue);
+
+  /* ─── Typography ───────────────────────────*/
+  --font-primary: 'Centura No 2', Nunito, Poppins, system-ui, sans-serif;
+
+  --hero:      clamp(3.2rem, 6vw, 7.2rem);
+  --h1:        clamp(3.2rem, 6vw, 7.2rem);
+  --h2:        clamp(2.4rem, 3.5vw, 4.4rem);
+  --h3:        clamp(2rem, 2.5vw, 3rem);
+  --h4:        clamp(1.8rem, 2vw, 2.4rem);
+  --fs-body-l: 2rem;
+  --fs-body:   1.7rem;
+  --fs-body-s: 1.5rem;
+  --fs-label:  1.3rem;
+  --fs-micro:  1.1rem;
+
+  /* ─── Spacing ──────────────────────────────*/
+  --space-xs:  0.4rem;
+  --space-s:   0.8rem;
+  --space-m:   1.6rem;
+  --space-l:   2.4rem;
+  --space-xl:  4.8rem;
+  --space-2xl: 8rem;
+  --space-3xl: 12rem;
+
+  --max-width:         1320px;
+  --content-padding:   clamp(1.6rem, 4vw, 6rem);
+  --section-gap:       clamp(6rem, 8vw, 12rem);
+  --card-gap:          2rem;
+  --product-grid-gap:  2.4rem;
+
+  /* ─── Radius ───────────────────────────────*/
+  --radius-s:    0.4rem;
+  --radius-m:    0.8rem;
+  --radius-l:    1.6rem;
+  --radius-xl:   3.2rem;
+  --radius-pill: 10rem;
+
+  /* ─── Motion ───────────────────────────────*/
+  --ease-out:   cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in:    cubic-bezier(0.4, 0, 1, 1);
+  --dur-fast:   150ms;
+  --dur-base:   220ms;
+  --dur-slow:   380ms;
+
+  /* ─── Shadows ──────────────────────────────*/
+  --shadow-card:  0 2px 12px rgba(0, 163, 224, 0.10);
+  --shadow-hover: 0 8px 32px rgba(0, 163, 224, 0.18);
+  --shadow-deep:  0 16px 48px rgba(0, 77, 122, 0.20);
+}

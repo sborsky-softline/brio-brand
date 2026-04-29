@@ -1,0 +1,23 @@
+{
+  "font": {
+    "primary": {
+      "family": "Centura No 2",
+      "weights": ["Light", "Book", "Medium", "Bold"],
+      "source": "Licensed — must be self-hosted. Not available on Google Fonts.",
+      "fallback": "Nunito, Poppins, system-ui, sans-serif",
+      "comment": "The exclusive Brio typeface. Geometric, rounded, clean. Used for all headings, body, UI."
+    }
+  },
+  "scale": {
+    "hero":   { "size": "clamp(3.2rem, 6vw, 7.2rem)", "weight": "Bold",   "lineHeight": "1.1" },
+    "h1":     { "size": "clamp(3.2rem, 6vw, 7.2rem)", "weight": "Bold",   "lineHeight": "1.1" },
+    "h2":     { "size": "clamp(2.4rem, 3.5vw, 4.4rem)", "weight": "Medium", "lineHeight": "1.2" },
+    "h3":     { "size": "clamp(2rem, 2.5vw, 3rem)",   "weight": "Medium", "lineHeight": "1.3" },
+    "h4":     { "size": "clamp(1.8rem, 2vw, 2.4rem)", "weight": "Medium", "lineHeight": "1.4" },
+    "bodyL":  { "size": "2rem",   "weight": "Book", "lineHeight": "1.65" },
+    "body":   { "size": "1.7rem", "weight": "Book", "lineHeight": "1.65" },
+    "bodyS":  { "size": "1.5rem", "weight": "Book", "lineHeight": "1.5"  },
+    "label":  { "size": "1.3rem", "weight": "Medium", "lineHeight": "1",  "transform": "uppercase", "letterSpacing": "0.08em" },
+    "micro":  { "size": "1.1rem", "weight": "Book", "lineHeight": "1"   }
+  }
+}
