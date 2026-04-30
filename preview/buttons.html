@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Brio — Buttons</title>
+<link rel="stylesheet" href="../colors_and_type.css" />
+<style>
+  body { padding: 24px; background: #fff; }
+  .row { display: flex; flex-wrap: wrap; gap: 14px; align-items: center; margin-bottom: 18px; }
+  .row:last-child { margin-bottom: 0; }
+  .row.dark { background: #004D7A; padding: 18px; border-radius: 1.6rem; }
+  .lbl { font-size: 10px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: #9EA1A2; min-width: 88px; }
+  .row.dark .lbl { color: #90C6EA; }
+  .btn {
+    display: inline-flex; align-items: center; justify-content: center;
+    padding: 12px 28px; border-radius: 1.6rem;
+    font-family: 'Centura No 2', Nunito, system-ui, sans-serif;
+    font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em;
+    border: 2px solid transparent; cursor: pointer;
+    transition: opacity 220ms cubic-bezier(0.16,1,0.3,1), transform 220ms cubic-bezier(0.16,1,0.3,1);
+  }
+  .btn:hover { opacity: 0.88; transform: translateY(-1px); }
+  .b-primary { background: #00A3E0; color: #fff; }
+  .b-ghost   { background: transparent; color: #00A3E0; border-color: #00A3E0; }
+  .b-dark    { background: #fff; color: #004D7A; }
+  .b-navy    { background: #004D7A; color: #fff; }
+  .b-sm { padding: 8px 18px; font-size: 11px; }
+</style>
+</head>
+<body>
+  <div class="row">
+    <div class="lbl">Primary</div>
+    <button class="btn b-primary">Shop Now</button>
+    <button class="btn b-primary b-sm">Quick Add</button>
+  </div>
+  <div class="row">
+    <div class="lbl">Ghost</div>
+    <button class="btn b-ghost">Learn More</button>
+    <button class="btn b-ghost b-sm">Compare</button>
+  </div>
+  <div class="row dark">
+    <div class="lbl">On Dark</div>
+    <button class="btn b-dark">View Details</button>
+    <button class="btn b-navy" style="border:2px solid #fff;">Explore</button>
+  </div>
+</body>
+</html>

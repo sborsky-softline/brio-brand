@@ -1,0 +1,185 @@
+/* Brio Water — Design System
+   Core color & type tokens, plus semantic role mappings.
+   Imports cleanly into any Brio-branded surface.
+
+   FONT NOTE: "Centura No 2" is the licensed Brio typeface. Self-host woff2
+   files in /fonts/ when you have the license. Until then this file falls
+   back to Nunito (a close geometric/rounded match available on Google Fonts).
+*/
+
+/* Centra No font family — files live in /fonts/. Aliased as
+   "Centura No 2" so existing Brio code/tokens that reference the brand
+   typeface name continue to resolve. */
+@font-face { font-family: 'Centura No 2'; src: url('fonts/CentraNo-Hairline.ttf') format('truetype'); font-weight: 100; font-style: normal; font-display: swap; }
+@font-face { font-family: 'Centura No 2'; src: url('fonts/CentraNo-Thin.ttf')     format('truetype'); font-weight: 200; font-style: normal; font-display: swap; }
+@font-face { font-family: 'Centura No 2'; src: url('fonts/CentraNo-Light.ttf')    format('truetype'); font-weight: 300; font-style: normal; font-display: swap; }
+@font-face { font-family: 'Centura No 2'; src: url('fonts/CentraNo-LightItalic.ttf') format('truetype'); font-weight: 300; font-style: italic; font-display: swap; }
+@font-face { font-family: 'Centura No 2'; src: url('fonts/CentraNo-Book.ttf')     format('truetype'); font-weight: 400; font-style: normal; font-display: swap; }
+@font-face { font-family: 'Centura No 2'; src: url('fonts/CentraNo-BookItalic.ttf') format('truetype'); font-weight: 400; font-style: italic; font-display: swap; }
+@font-face { font-family: 'Centura No 2'; src: url('fonts/CentraNo-Medium.ttf')   format('truetype'); font-weight: 500; font-style: normal; font-display: swap; }
+@font-face { font-family: 'Centura No 2'; src: url('fonts/CentraNo-MediumItalic.ttf') format('truetype'); font-weight: 500; font-style: italic; font-display: swap; }
+@font-face { font-family: 'Centura No 2'; src: url('fonts/CentraNo-Bold.ttf')     format('truetype'); font-weight: 700; font-style: normal; font-display: swap; }
+@font-face { font-family: 'Centura No 2'; src: url('fonts/CentraNo-BoldItalic.ttf') format('truetype'); font-weight: 700; font-style: italic; font-display: swap; }
+@font-face { font-family: 'Centura No 2'; src: url('fonts/CentraNo-Extrabold.ttf') format('truetype'); font-weight: 800; font-style: normal; font-display: swap; }
+@font-face { font-family: 'Centura No 2'; src: url('fonts/CentraNo-Black.ttf')    format('truetype'); font-weight: 900; font-style: normal; font-display: swap; }
+
+:root {
+  /* ─── Brand palette ────────────────────────── */
+  --color-blue:         #00A3E0; /* BW 299C  — primary */
+  --color-blue-light:   #90C6EA; /* BW 2905C — secondary accent */
+  --color-navy:         #004D7A; /* BW 7693C — deep accent */
+  --color-charcoal:     #24282B; /* BW 426C  — body text + footer */
+  --color-gray:         #9EA1A2; /* BW 422C  — secondary text */
+  --color-gray-light:   #E4E1E5; /* BW 663C  — bgs, borders */
+  --color-white:        #FFFFFF;
+
+  /* Section tint — ultra-light blue, used for alternating bands */
+  --color-tint:         #F0F8FD;
+
+  /* ─── Semantic surfaces ────────────────────── */
+  --surface-default:    var(--color-white);
+  --surface-tint:       var(--color-tint);
+  --surface-dark:       var(--color-navy);
+  --surface-footer:     var(--color-charcoal);
+
+  /* ─── Semantic text ────────────────────────── */
+  --text-primary:       var(--color-charcoal);
+  --text-secondary:     var(--color-gray);
+  --text-on-dark:       var(--color-white);
+  --text-on-dark-soft:  var(--color-blue-light);
+  --text-brand:         var(--color-blue);
+
+  /* ─── Borders ──────────────────────────────── */
+  --border-default:     var(--color-gray-light);
+  --border-strong:      var(--color-gray);
+  --border-brand:       var(--color-blue);
+
+  /* ─── Interactive ──────────────────────────── */
+  --interactive-primary-bg:     var(--color-blue);
+  --interactive-primary-text:   var(--color-white);
+  --interactive-secondary-bg:   transparent;
+  --interactive-secondary-text: var(--color-blue);
+  --interactive-secondary-border: var(--color-blue);
+  --interactive-dark-bg:        var(--color-white);
+  --interactive-dark-text:      var(--color-navy);
+
+  /* ─── Status / e-commerce ──────────────────── */
+  --price-default:      var(--color-charcoal);
+  --price-sale:         var(--color-blue);
+  --price-original:     var(--color-gray);
+  --badge-sale-bg:      var(--color-blue);
+  --badge-new-bg:       var(--color-navy);
+  --badge-excl-bg:      var(--color-charcoal);
+
+  /* ─── Typography ───────────────────────────── */
+  --font-primary: 'Centura No 2', 'Nunito', 'Poppins', system-ui, -apple-system, sans-serif;
+
+  /* Weights (named alongside Centura's family) */
+  --weight-light:  300;  /* Light */
+  --weight-book:   400;  /* Book — default body */
+  --weight-medium: 500;  /* Medium — H2–H4, nav */
+  --weight-bold:   700;  /* Bold — H1, CTAs, badges */
+
+  /* Type scale (rem-based; html { font-size: 62.5% } makes 1rem = 10px) */
+  --hero:      clamp(3.2rem, 6vw, 7.2rem);
+  --h1:        clamp(3.2rem, 6vw, 7.2rem);
+  --h2:        clamp(2.4rem, 3.5vw, 4.4rem);
+  --h3:        clamp(2rem, 2.5vw, 3rem);
+  --h4:        clamp(1.8rem, 2vw, 2.4rem);
+  --fs-body-l: 2rem;
+  --fs-body:   1.7rem;
+  --fs-body-s: 1.5rem;
+  --fs-label:  1.3rem;
+  --fs-micro:  1.1rem;
+
+  /* Line heights */
+  --lh-tight:  1.1;
+  --lh-snug:   1.2;
+  --lh-normal: 1.4;
+  --lh-loose:  1.65;
+
+  /* Tracking */
+  --track-label: 0.08em;  /* uppercase labels, series tags */
+  --track-cta:   0.06em;  /* button labels */
+
+  /* ─── Spacing ──────────────────────────────── */
+  --space-xs:  0.4rem;
+  --space-s:   0.8rem;
+  --space-m:   1.6rem;
+  --space-l:   2.4rem;
+  --space-xl:  4.8rem;
+  --space-2xl: 8rem;
+  --space-3xl: 12rem;
+
+  --max-width:        1320px;
+  --content-padding:  clamp(1.6rem, 4vw, 6rem);
+  --section-gap:      clamp(6rem, 8vw, 12rem);
+  --card-gap:         2rem;
+  --product-grid-gap: 2.4rem;
+
+  /* ─── Radii ────────────────────────────────── */
+  --radius-s:    0.4rem;
+  --radius-m:    0.8rem;
+  --radius-l:    1.6rem;
+  --radius-xl:   3.2rem;
+  --radius-pill: 10rem;
+
+  /* ─── Shadows (always blue-tinted, never black) ── */
+  --shadow-card:  0 2px 12px rgba(0, 163, 224, 0.10);
+  --shadow-hover: 0 8px 32px rgba(0, 163, 224, 0.18);
+  --shadow-deep:  0 16px 48px rgba(0, 77, 122, 0.20);
+
+  /* ─── Motion ───────────────────────────────── */
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in:  cubic-bezier(0.4, 0, 1, 1);
+  --dur-fast: 150ms;
+  --dur-base: 220ms;
+  --dur-slow: 380ms;
+}
+
+/* ─── Element defaults (semantic) ───────────────── */
+html { font-size: 62.5%; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+
+body {
+  font-family: var(--font-primary);
+  font-size: var(--fs-body);
+  font-weight: var(--weight-book);
+  color: var(--text-primary);
+  background: var(--surface-default);
+  line-height: var(--lh-loose);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-primary);
+  color: var(--text-primary);
+  line-height: var(--lh-snug);
+}
+h1 { font-size: var(--h1); font-weight: var(--weight-bold);   line-height: var(--lh-tight); }
+h2 { font-size: var(--h2); font-weight: var(--weight-medium); }
+h3 { font-size: var(--h3); font-weight: var(--weight-medium); line-height: 1.3; }
+h4 { font-size: var(--h4); font-weight: var(--weight-medium); line-height: var(--lh-normal); }
+
+p     { font-size: var(--fs-body); line-height: var(--lh-loose); }
+small { font-size: var(--fs-body-s); }
+
+a {
+  color: var(--color-blue);
+  text-decoration: none;
+  transition: opacity var(--dur-fast) var(--ease-out);
+}
+a:hover { opacity: 0.75; }
+
+/* Reusable label utility */
+.brio-label {
+  display: inline-block;
+  font-family: var(--font-primary);
+  font-size: var(--fs-label);
+  font-weight: var(--weight-bold);
+  text-transform: uppercase;
+  letter-spacing: var(--track-label);
+  color: var(--color-blue);
+  line-height: 1;
+}
+.brio-label--navy  { color: var(--color-navy); }
+.brio-label--gray  { color: var(--color-gray); }
+.brio-label--white { color: var(--color-white); }

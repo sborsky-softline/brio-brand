@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Brio — The 2-hue rule</title>
+<link rel="stylesheet" href="../colors_and_type.css" />
+<style>
+  body { padding: 24px; background: #fff; }
+  .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+  .pair { border-radius: var(--radius-l); overflow: hidden; box-shadow: var(--shadow-card); border: 1px solid var(--border-default); }
+  .stripes { display: flex; height: 92px; }
+  .stripes > div { flex: 1; display: flex; align-items: end; padding: 8px 10px; font-size: 10px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; }
+  .meta { padding: 10px 14px 12px; background: #fff; }
+  .meta b { font-size: 12px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: var(--color-charcoal); }
+  .meta p { font-size: 11px; color: var(--color-gray); margin-top: 2px; line-height: 1.5; }
+</style>
+</head>
+<body>
+  <div class="grid">
+    <div class="pair">
+      <div class="stripes">
+        <div style="background:#FFFFFF;color:#24282B;border-right:1px solid #E4E1E5;">White</div>
+        <div style="background:#00A3E0;color:#fff;">Blue</div>
+      </div>
+      <div class="meta"><b>Most layouts</b><p>Primary blue + white. The default Brio composition.</p></div>
+    </div>
+    <div class="pair">
+      <div class="stripes">
+        <div style="background:#00A3E0;color:#fff;">Blue</div>
+        <div style="background:#90C6EA;color:#004D7A;">Blue Light</div>
+      </div>
+      <div class="meta"><b>Accented</b><p>Primary + secondary blue for tinted accents.</p></div>
+    </div>
+    <div class="pair">
+      <div class="stripes">
+        <div style="background:#004D7A;color:#fff;">Navy</div>
+        <div style="background:#00A3E0;color:#fff;">Blue</div>
+      </div>
+      <div class="meta"><b>Dark sections</b><p>Navy ground with blue accent. CTA + headlines pop.</p></div>
+    </div>
+  </div>
+</body>
+</html>

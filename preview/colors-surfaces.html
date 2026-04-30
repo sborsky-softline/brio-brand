@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Brio — Surfaces &amp; semantic roles</title>
+<link rel="stylesheet" href="../colors_and_type.css" />
+<style>
+  body { padding: 24px; background: #fff; }
+  .row { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; }
+  .surface { border-radius: var(--radius-l); padding: 16px; min-height: 120px; box-shadow: var(--shadow-card); display: flex; flex-direction: column; justify-content: space-between; border: 1px solid transparent; }
+  .label { font-size: 10px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; opacity: 0.85; }
+  .name { font-size: 16px; font-weight: 700; }
+  .var  { font-size: 10px; opacity: 0.8; font-family: ui-monospace, monospace; }
+  .s-default { background: #FFFFFF; color: #24282B; border-color: #E4E1E5; }
+  .s-tint    { background: #F0F8FD; color: #24282B; }
+  .s-dark    { background: #004D7A; color: #FFFFFF; }
+  .s-footer  { background: #24282B; color: #FFFFFF; }
+</style>
+</head>
+<body>
+  <div class="row">
+    <div class="surface s-default">
+      <div class="label" style="color:#00A3E0;">Default</div>
+      <div>
+        <div class="name">White surface</div>
+        <div class="var">--surface-default · #FFFFFF</div>
+      </div>
+    </div>
+    <div class="surface s-tint">
+      <div class="label" style="color:#00A3E0;">Tint</div>
+      <div>
+        <div class="name">Alt section</div>
+        <div class="var">--surface-tint · #F0F8FD</div>
+      </div>
+    </div>
+    <div class="surface s-dark">
+      <div class="label" style="color:#90C6EA;">Dark</div>
+      <div>
+        <div class="name">Navy feature</div>
+        <div class="var">--surface-dark · #004D7A</div>
+      </div>
+    </div>
+    <div class="surface s-footer">
+      <div class="label" style="color:#90C6EA;">Footer</div>
+      <div>
+        <div class="name">Charcoal footer</div>
+        <div class="var">--surface-footer · #24282B</div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

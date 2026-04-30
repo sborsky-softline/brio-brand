@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Brio — Trust bar</title>
+<link rel="stylesheet" href="../colors_and_type.css" />
+<style>
+  body { padding: 0; background: #fff; font-family: 'Centura No 2', Nunito, system-ui, sans-serif; }
+  .bar { display: grid; grid-template-columns: repeat(4, 1fr); background: #E4E1E5; }
+  .item { padding: 26px 16px; display: flex; flex-direction: column; align-items: center; border-right: 1px solid rgba(158,161,162,0.3); }
+  .item:last-child { border-right: 0; }
+  strong { font-size: 26px; font-weight: 700; color: #00A3E0; line-height: 1; }
+  span { font-size: 12px; color: #24282B; margin-top: 6px; text-align: center; }
+</style>
+</head>
+<body>
+  <div class="bar">
+    <div class="item"><strong>99%</strong><span>Contaminants Removed</span></div>
+    <div class="item"><strong>NSF</strong><span>Certified Components</span></div>
+    <div class="item"><strong>1M+</strong><span>Happy Customers</span></div>
+    <div class="item"><strong>Free</strong><span>Shipping on $50+</span></div>
+  </div>
+</body>
+</html>

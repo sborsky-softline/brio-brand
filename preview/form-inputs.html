@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8" />
+<title>Brio — Form inputs</title>
+<link rel="stylesheet" href="../colors_and_type.css" />
+<style>
+  body { padding: 24px 28px; background: #fff; font-family: 'Centura No 2', Nunito, system-ui, sans-serif; }
+  .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
+  .field { display: flex; flex-direction: column; gap: 6px; }
+  label { font-size: 11px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: #00A3E0; }
+  input, select {
+    padding: 12px 14px; border: 1.5px solid #E4E1E5; border-radius: 0.8rem;
+    font-family: inherit; font-size: 14px; color: #24282B; background: #fff;
+    transition: border 150ms ease;
+  }
+  input:focus, select:focus { outline: none; border-color: #00A3E0; box-shadow: 0 0 0 3px rgba(0,163,224,0.15); }
+  .focused { border-color: #00A3E0; box-shadow: 0 0 0 3px rgba(0,163,224,0.15); }
+  .err { border-color: #d93a3a; }
+  .helper { font-size: 11px; color: #9EA1A2; }
+  .helper.err { color: #d93a3a; }
+  .checkbox { display: inline-flex; gap: 8px; align-items: center; font-size: 13px; color: #24282B; }
+  .checkbox input { width: 16px; height: 16px; accent-color: #00A3E0; padding: 0; }
+</style>
+</head>
+<body>
+  <div class="grid">
+    <div class="field">
+      <label>Email · default</label>
+      <input type="email" placeholder="you@example.com" />
+      <span class="helper">We'll send order updates here.</span>
+    </div>
+    <div class="field">
+      <label>Email · focused</label>
+      <input class="focused" type="email" value="ana@brio.example" />
+      <span class="helper">Active state</span>
+    </div>
+    <div class="field">
+      <label>Zip · error</label>
+      <input class="err" type="text" value="0000" />
+      <span class="helper err">Enter a valid US zip code.</span>
+    </div>
+    <div class="field" style="justify-content: end;">
+      <label class="checkbox"><input type="checkbox" checked> Sign me up for tips on better hydration.</label>
+    </div>
+  </div>
+</body>
+</html>

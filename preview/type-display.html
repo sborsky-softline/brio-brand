@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Brio — Type: Display scale</title>
+<link rel="stylesheet" href="../colors_and_type.css" />
+<style>
+  body { padding: 22px 28px; background: #fff; }
+  .row { display: grid; grid-template-columns: 110px 1fr 110px; gap: 16px; align-items: baseline; padding: 10px 0; border-bottom: 1px solid #E4E1E5; }
+  .row:last-child { border-bottom: none; }
+  .meta { font-size: 11px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: #00A3E0; }
+  .specs { font-size: 10px; color: #9EA1A2; font-family: ui-monospace, monospace; text-align: right; }
+  .sample-h1 { font-size: 56px; font-weight: 700; color: #00A3E0; line-height: 1; letter-spacing: -0.01em; }
+  .sample-h2 { font-size: 36px; font-weight: 500; color: #24282B; line-height: 1.1; }
+  .sample-h3 { font-size: 26px; font-weight: 500; color: #24282B; line-height: 1.2; }
+</style>
+</head>
+<body>
+  <div class="row">
+    <div class="meta">H1 · Hero</div>
+    <div class="sample-h1">Better water.</div>
+    <div class="specs">Bold<br>clamp(3.2 · 6vw · 7.2rem)</div>
+  </div>
+  <div class="row">
+    <div class="meta">H2</div>
+    <div class="sample-h2">Built to last. Tested to prove it.</div>
+    <div class="specs">Medium<br>clamp(2.4 · 3.5vw · 4.4rem)</div>
+  </div>
+  <div class="row">
+    <div class="meta">H3</div>
+    <div class="sample-h3">Engineered for every space.</div>
+    <div class="specs">Medium<br>clamp(2 · 2.5vw · 3rem)</div>
+  </div>
+</body>
+</html>

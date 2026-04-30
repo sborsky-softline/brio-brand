@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Brio — Badges &amp; labels</title>
+<link rel="stylesheet" href="../colors_and_type.css" />
+<style>
+  body { padding: 28px; background: #fff; font-family: 'Centura No 2', Nunito, system-ui, sans-serif; }
+  .row { display: flex; flex-wrap: wrap; gap: 12px; margin-bottom: 16px; align-items: center; }
+  .row:last-child { margin-bottom: 0; }
+  .lbl { font-size: 10px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: #9EA1A2; min-width: 100px; }
+  .badge {
+    display: inline-flex; align-items: center; padding: 6px 12px;
+    border-radius: 0.4rem; font-size: 11px; font-weight: 700;
+    text-transform: uppercase; letter-spacing: 0.06em; color: #fff;
+  }
+  .b-sale  { background: #00A3E0; }
+  .b-new   { background: #004D7A; }
+  .b-excl  { background: #24282B; }
+  .series { font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; }
+  .s-blue  { color: #00A3E0; }
+  .s-navy  { color: #004D7A; }
+  .s-gray  { color: #9EA1A2; }
+</style>
+</head>
+<body>
+  <div class="row">
+    <div class="lbl">Product Badges</div>
+    <span class="badge b-sale">50% Off</span>
+    <span class="badge b-sale">Sale</span>
+    <span class="badge b-new">New</span>
+    <span class="badge b-excl">Exclusive</span>
+  </div>
+  <div class="row">
+    <div class="lbl">Series Labels</div>
+    <span class="series s-blue">Moderna Series</span>
+    <span class="series s-navy">Bottleless</span>
+    <span class="series s-gray">New Arrival</span>
+  </div>
+</body>
+</html>

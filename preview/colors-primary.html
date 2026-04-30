@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Brio — Color: Primary palette</title>
+<link rel="stylesheet" href="../colors_and_type.css" />
+<style>
+  body { padding: 24px; background: #fff; }
+  .row { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+  .swatch { border-radius: var(--radius-l); overflow: hidden; box-shadow: var(--shadow-card); border: 1px solid var(--border-default); }
+  .chip { aspect-ratio: 16 / 7; display: flex; align-items: flex-end; padding: 12px 14px; }
+  .meta { background: #fff; padding: 10px 14px 12px; }
+  .name { font-size: 13px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: var(--color-charcoal); }
+  .hex  { font-size: 11px; color: var(--color-gray); margin-top: 2px; font-variant-numeric: tabular-nums; }
+  .pms  { font-size: 10px; color: var(--color-blue); letter-spacing: 0.08em; text-transform: uppercase; margin-top: 4px; font-weight: 700; }
+</style>
+</head>
+<body>
+  <div class="row">
+    <div class="swatch">
+      <div class="chip" style="background:#00A3E0;"></div>
+      <div class="meta">
+        <div class="name">Blue</div>
+        <div class="hex">#00A3E0</div>
+        <div class="pms">PMS BW 299C</div>
+      </div>
+    </div>
+    <div class="swatch">
+      <div class="chip" style="background:#90C6EA;"></div>
+      <div class="meta">
+        <div class="name">Blue Light</div>
+        <div class="hex">#90C6EA</div>
+        <div class="pms">PMS BW 2905C</div>
+      </div>
+    </div>
+    <div class="swatch">
+      <div class="chip" style="background:#004D7A;"></div>
+      <div class="meta">
+        <div class="name" style="color:#fff;background:transparent;">Navy</div>
+        <div class="hex">#004D7A</div>
+        <div class="pms">PMS BW 7693C</div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Brio — Color: Neutrals</title>
+<link rel="stylesheet" href="../colors_and_type.css" />
+<style>
+  body { padding: 24px; background: #fff; }
+  .row { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; }
+  .swatch { border-radius: var(--radius-l); overflow: hidden; box-shadow: var(--shadow-card); border: 1px solid var(--border-default); }
+  .chip { aspect-ratio: 16 / 9; }
+  .meta { background: #fff; padding: 10px 12px 12px; }
+  .name { font-size: 12px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: var(--color-charcoal); }
+  .hex  { font-size: 11px; color: var(--color-gray); margin-top: 2px; font-variant-numeric: tabular-nums; }
+  .pms  { font-size: 10px; color: var(--color-blue); letter-spacing: 0.08em; text-transform: uppercase; margin-top: 4px; font-weight: 700; }
+</style>
+</head>
+<body>
+  <div class="row">
+    <div class="swatch">
+      <div class="chip" style="background:#24282B;"></div>
+      <div class="meta"><div class="name">Charcoal</div><div class="hex">#24282B</div><div class="pms">BW 426C</div></div>
+    </div>
+    <div class="swatch">
+      <div class="chip" style="background:#9EA1A2;"></div>
+      <div class="meta"><div class="name">Gray</div><div class="hex">#9EA1A2</div><div class="pms">BW 422C</div></div>
+    </div>
+    <div class="swatch">
+      <div class="chip" style="background:#E4E1E5;"></div>
+      <div class="meta"><div class="name">Gray Light</div><div class="hex">#E4E1E5</div><div class="pms">BW 663C</div></div>
+    </div>
+    <div class="swatch">
+      <div class="chip" style="background:#FFFFFF;border-bottom:1px solid #E4E1E5;"></div>
+      <div class="meta"><div class="name">White</div><div class="hex">#FFFFFF</div><div class="pms">&nbsp;</div></div>
+    </div>
+  </div>
+</body>
+</html>

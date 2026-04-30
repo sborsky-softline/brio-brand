@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Brio — Radii</title>
+<link rel="stylesheet" href="../colors_and_type.css" />
+<style>
+  body { padding: 22px; background: #fff; }
+  .grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 14px; }
+  .cell { display: flex; flex-direction: column; align-items: center; gap: 8px; }
+  .box  { width: 84px; height: 84px; background: #fff; border: 2px solid #00A3E0; }
+  .pill { width: 110px; height: 56px; background: #fff; border: 2px solid #00A3E0; }
+  .name { font-size: 11px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: #24282B; }
+  .val  { font-size: 10px; color: #9EA1A2; font-family: ui-monospace, monospace; }
+</style>
+</head>
+<body>
+  <div class="grid">
+    <div class="cell"><div class="box" style="border-radius:0.4rem;"></div><div class="name">S</div><div class="val">0.4rem</div></div>
+    <div class="cell"><div class="box" style="border-radius:0.8rem;"></div><div class="name">M</div><div class="val">0.8rem</div></div>
+    <div class="cell"><div class="box" style="border-radius:1.6rem;"></div><div class="name">L</div><div class="val">1.6rem · cards/btns</div></div>
+    <div class="cell"><div class="box" style="border-radius:3.2rem;"></div><div class="name">XL</div><div class="val">3.2rem</div></div>
+    <div class="cell"><div class="pill" style="border-radius:10rem;"></div><div class="name">Pill</div><div class="val">10rem</div></div>
+  </div>
+</body>
+</html>

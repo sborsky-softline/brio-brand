@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Brio — Logo lockups</title>
+<link rel="stylesheet" href="../colors_and_type.css" />
+<style>
+  body { padding: 24px; background: #fff; font-family: 'Centura No 2', Nunito, system-ui, sans-serif; }
+  .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
+  .cell { border-radius: 1.6rem; padding: 28px 22px; display: flex; flex-direction: column; align-items: center; gap: 18px; box-shadow: 0 2px 12px rgba(0,163,224,0.08); border: 1px solid #E4E1E5; min-height: 160px; justify-content: center; }
+  .cell.dark { background: #004D7A; border-color: transparent; }
+  .cell img { height: 64px; width: auto; }
+  .lbl { font-size: 10px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: #9EA1A2; }
+  .cell.dark .lbl { color: #90C6EA; }
+</style>
+</head>
+<body>
+  <div class="grid">
+    <div class="cell"><img src="../assets/logo-color.svg?v=4" alt="Brio color" /><span class="lbl">Color · on white</span></div>
+    <div class="cell"><img src="../assets/logo-mono.svg?v=4" alt="Brio mono" /><span class="lbl">Mono · grayscale</span></div>
+    <div class="cell dark"><img src="../assets/logo-reversed.svg?v=4" alt="Brio reversed" /><span class="lbl">Reversed · on navy</span></div>
+  </div>
+</body>
+</html>

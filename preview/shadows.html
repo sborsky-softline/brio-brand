@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Brio — Shadows</title>
+<link rel="stylesheet" href="../colors_and_type.css" />
+<style>
+  body { padding: 30px 24px; background: #F0F8FD; }
+  .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; }
+  .cell { display: flex; flex-direction: column; align-items: center; gap: 10px; }
+  .card { width: 140px; height: 90px; background: #fff; border-radius: 1.6rem; }
+  .name { font-size: 11px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: #24282B; }
+  .val  { font-size: 10px; color: #9EA1A2; font-family: ui-monospace, monospace; text-align: center; line-height: 1.5; }
+  .s-card  { box-shadow: 0 2px 12px rgba(0, 163, 224, 0.10); }
+  .s-hover { box-shadow: 0 8px 32px rgba(0, 163, 224, 0.18); }
+  .s-deep  { box-shadow: 0 16px 48px rgba(0, 77, 122, 0.20); }
+</style>
+</head>
+<body>
+  <div class="grid">
+    <div class="cell"><div class="card s-card"></div><div class="name">Card · resting</div><div class="val">rgba(0,163,224, 0.10)</div></div>
+    <div class="cell"><div class="card s-hover"></div><div class="name">Hover · lift</div><div class="val">rgba(0,163,224, 0.18)</div></div>
+    <div class="cell"><div class="card s-deep"></div><div class="name">Deep · modal</div><div class="val">rgba(0,77,122, 0.20)</div></div>
+  </div>
+</body>
+</html>
